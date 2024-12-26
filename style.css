@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+
+}
+
+.loh {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation-name: nega;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: red;
+}
+
+@keyframes nega {
+    0% {
+        background-color: green;
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        background-color: blue;
+        top: 0;
+        left: 1000px;
+    }
+
+    50% {
+        background-color: orange;
+        top: 1000px;
+        left: 1000px;
+    }
+
+    75% {
+        background-color: magenta;
+        top: 1000px;
+        left: 0;
+    }
+
+    100% {
+        background-color: purple;
+        top: 0;
+        left: 0;
+    }
+}
